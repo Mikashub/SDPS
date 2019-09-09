@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:200,200i,400,400i,500,500i,700,700i&display=swap&subset=latin-ext');
+/* imported golgle fonts > font-family: 'Montserrat', sans-serif; */
+body {
+  position: relative;
+}
+header {
+  min-height: 10vh;
+}
+main {
+  min-height: 20vh;
+}
+footer {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  color: #fff;
+  background-color: #0e0727;
+}
+.card {
+  margin: .5rem 0 .5rem;
+}
+.card-header, .card-body {
+  text-align: center;
+}
+.card-header .fa {
+  color: #0e0727;
+  font-size: 2rem;
+}
+.card-body {
+  background-color: #0e0727;
+}
+.card-body a img {
+  border-radius: .25rem;
+  opacity: .75;
+}
+.card-body a:hover img {
+  opacity: 1;
+}
+.card-title {
+  color: #17a2b8;
+}
+.form-group {
+  font-size: .9375rem;
+  text-align: left;
+}
+.form-group input,
+.form-group :placeholder-shown {
+  font-size: .875rem;
+}
+#emlform h5:hover {
+  cursor: pointer;
+}
+#emlform h5:hover .fa {
+  color: #b10106;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .card {
+    margin: 1rem 0 1rem;
+  }
+}

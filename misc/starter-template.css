@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,500,600,700,700i|Montserrat:200,200i,400,400i,500,500i,700,700i&display=swap&subset=latin-ext');
+/* imported golgle fonts:
+  font-family: 'Montserrat', sans-serif;
+  font-family: 'EB Garamond', serif;
+*/
+body {
+  position: relative;
+}
+.starter-template {
+  padding: 3rem 1.5rem  0;
+}
+.navbar {
+  background-color: rgba(255, 255, 255, .95);
+  -webkit-transition: all .3s ease-out;
+  -moz-transition: all .3s ease-out;
+  -o-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+.navbar-brand {
+  background: left / contain no-repeat url('../pics/LogoSDPS.png');
+  width: 45%;
+  margin-right: .5em;
+  -webkit-transform: translateZ(0);
+  /* prevents shaky transitions in Chrome */
+}
+.navbar-brand h1 {
+  margin-bottom: 0;
+  font-size: 2.5rem;
+}
+.navbar-light .navbar-toggler {
+  border-color: rgba(33, 12, 112,.5);
+  padding: .125rem .25rem;
+  font-size: 1rem;
+  line-height: 1;
+}
+.navbar-toggler:focus, .navbar-toggler:hover {
+  outline: none;
+}
+.navbar-nav .nav-item.main-menu {
+  margin-bottom: .625rem;
+}
+.show .navbar-nav .nav-item.main-menu {
+  margin-bottom: .25rem;
+}
+.navbar-nav .nav-link {
+  font-size: .875rem;
+  padding-top: .25rem;
+  padding-bottom: .25rem;
+}
+.navbar-expand-md .navbar-nav .nav-link.pr0 {
+  padding-right: 0;
+}
+/* Inserting a collapsed row between two flex items will
+make the flex item that comes after it break to a new row */
+.flex-row-break {
+  flex-basis: 100%;
+  height: 0;
+}
+/* Use a collapsed column to break to a new column
+.flex-column-break {
+  flex-basis: 100%;
+  width: 0;
+} */
+.navbar-sdps .navbar-nav .nav-link {
+  color: rgba(33, 12, 112,.75);
+}
+.navbar-sdps .navbar-nav .nav-link:focus, 
+.navbar-sdps .navbar-nav .nav-link:hover {
+  color: rgba(33, 12, 112, 1);
+}
+.navbar-nav .main-menu .nav-link {
+  color: rgba(0, 0, 0,.95);
+}
+.navbar-nav .main-menu .nav-link:focus,
+.navbar-nav .main-menu .nav-link:hover {
+  color: rgba(0, 0, 0, .65);
+}
+.navbar-nav .soc-net {
+  color: #210c70;
+  padding-right: .75rem;
+  padding-bottom: .5rem;
+  font-size: .9375rem;
+}
+.plsfe-menu {
+  margin-left: 1.625rem;
+}
+#mission {
+  color: rgba(33, 12, 112, 0.75);
+  display: none;
+  font-size: .8rem;
+  font-style: italic;
+  margin-bottom: 0;
+  width: 40%;
+}
+#naslovna {
+  position: relative;
+  min-height: 50vh;
+}
+#naslovna .background-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #08031b;
+  opacity: 0.75;
+  /* transition: background 0.3s,  opacity 0.3s; */
+}
+#naslovna section {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  padding: .5rem 1rem 3rem;
+}
+#naslovna section:nth-of-type(1) {
+  padding-top: 4.5rem;
+}
+#naslovna h4 {
+  width: 80vw;
+}
+section h2 {
+  font-family: 'EB Garamond', Georgia, Times, serif;
+  font-size: 1.5rem;
+  margin-top: 2rem;
+  font-style: italic;
+}
+section h4 {
+  font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 200;
+  margin: 3rem auto 1rem;
+}
+.btn {
+  border-radius: .75rem;
+}
+.btn-links-wrap {
+  margin-top: 2em;
+}
+.btn-links-wrap .btn {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 1rem;
+  border-radius: 1.25rem;
+  padding: .5em 1.5em;
+}
+.btn-outline-light.focus,
+.btn-outline-light:focus {
+  box-shadow: none;
+}
+.btn-links-wrap .btn.sdps-red {
+  background-color: rgba(177, 16, 21, 0.5);
+}
+.btn-links-wrap .btn.sdps-red:focus,
+.btn-links-wrap .btn.sdps-red:hover {
+  color: #fff;
+  background-color: rgba(177, 16, 21, 0.9);
+}
+.btn-links-wrap .btn.sdps-blue {
+  background-color: rgba(34, 12, 112, 0.5);
+}
+.btn-links-wrap .btn.sdps-blue:focus,
+.btn-links-wrap .btn.sdps-blue:hover {
+  color: #fff;
+  background-color: rgba(34, 12, 112, 0.9);
+}
+/* styles for displaying header minimized on top */
+.minnav.navbar {
+  background-color: #fff;
+  padding-top: 0;
+  padding-bottom: 0;
+  border-bottom: 1px solid #210c70;
+}
+.minnav .navbar-brand {
+  width: 50%;
+  margin-top: .125rem!important;
+  margin-bottom: .125rem!important;
+}
+.minnav .navbar-brand h1 {
+  font-size: 1.75rem;
+}
+.minnav #mission {
+  display: none;
+}
+.minnav.navbar-expand-md .navbar-nav .nav-link.pr0 {
+  padding-right: .5rem;
+}
+.minnav.navbar-expand-md .navbar-nav .plsfe-item.nav-link.pr0 {
+  width: 5rem;
+}
+.minnav .navbar-nav .nav-link {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.minnav .navbar-nav .nav-item.main-menu {
+  margin-bottom: 0;
+}
+.minnav .flex-row-break {
+  display: none;
+}
+.minnav .plsfe-menu {
+  margin-left: .5rem;
+}
+/* Extra small devices (portrait phones, less than 576px or 480px in this case) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Smaller devices (portrait phones, 480px and up) */
+@media (min-width: 480px) {
+  .navbar-brand {
+    width: 40%;
+  }
+  .minnav .navbar-brand {
+    width: 45%;
+  }
+  #mission {
+    display: block;
+  }
+  .btn-links-wrap .btn {
+    margin: 1.5rem 2.5rem;
+  }
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .navbar-brand {
+    width: 35%;
+  }
+  .minnav .navbar-brand {
+    width: 40%;
+  }
+  .navbar-brand h1 {
+    font-size: 3.25rem;
+  }
+  #mission {
+    font-size: .85rem;
+  }
+  #naslovna {
+    min-height: 60vh;
+  }
+  #naslovna section:nth-of-type(1) {
+    padding-top: 5rem;
+  }
+  section h2 {
+    font-size: 2rem;
+  }
+  section h4 {
+    font-size: 1.5rem;
+  }
+  .btn-links-wrap .btn {
+    margin: 1.5rem 4.5rem;
+  }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .navbar-brand {
+    width: 40%;
+  }
+  .fa-linkedin {
+    transform: translateY(-16%);
+  }
+  .fa-instagram {
+    transform: translateY(-9%);
+  }
+  .fa-facebook {
+    transform: translateY(-12%);
+  }
+  .sub-menu {
+    margin-left: 2.5rem;
+  }
+  .minnav #mission {
+    display: block;
+  }
+  .minnav .navbar-nav.text-right {
+    flex-grow: 1;
+  }
+  #naslovna {
+    min-height: 85vh;
+  }
+  #naslovna section:nth-of-type(1) {
+    padding-top: 6rem;
+  }
+  #naslovna h4 {
+    width: 75vw;
+  }
+  section h2 {
+    font-size: 2.5rem;
+  }
+  section h4 {
+    font-size: 2rem;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .navbar-brand {
+    width: 35%;
+  }
+  .minnav .navbar-brand {
+    width: 25%;
+  }
+  #mission {
+    line-height: 1.8;
+    width: 45%;
+  }
+  #naslovna {
+    min-height: 100vh;
+  }
+  #naslovna section:nth-of-type(1) {
+    padding-top: 8rem;
+  }
+  #naslovna h4 {
+    width: 60vw;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .navbar-brand {
+    width: 25%;
+  }
+  .minnav .navbar-brand {
+    width: 20%;
+  }
+  .navbar-brand h1 {
+    font-size: 4rem;
+  }
+  .navbar-expand-md .navbar-nav .nav-link.pr0 {
+    padding-right: .5rem;
+  }
+  .navbar-expand-md .navbar-nav .plsfe-item.nav-link.pr0 {
+    width: 5rem;
+  }
+  .navbar-nav .nav-item.main-menu {
+    margin-bottom: 0;
+  }
+  .minnav #mission {
+    transform: translateY(-9%);
+  }
+  .minnav #mission>br {
+    display: none;
+  }
+  .flex-row-break {
+    display: none;
+  }
+  .plsfe-menu {
+    margin-left: .5rem;
+  }
+  #naslovna h4 {
+    width: 50vw;
+  }
+}
