@@ -184,6 +184,13 @@ section .subh3,
 section h4 {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
+.subh3 a {
+  color: #210c70;
+}
+.subh3 a:hover {
+  color: #b10106;
+  text-decoration: none;
+}
 #naslovna h4 {
   font-size: 1.25rem;
   font-weight: 200;
