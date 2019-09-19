@@ -7,7 +7,7 @@ $(function() {
 
   var topoffset = 50; // pixels to offset from top when calculating position of scroll
   
-  //Activate Scrollspy
+  // Activate Scrollspy
   $('body').scrollspy({
     target: '#sitenav',
     offset: topoffset
@@ -18,6 +18,15 @@ $(function() {
   $(window).on('activate.bs.scrollspy', function () {
     toggleNavbar();
   });
+
+  // Set article min-height if it contains an image
+  $('#proizvodi article').each(function(){
+    if ( $(this).has('img') ) {
+      var imgh = $('img', this).height();
+      $(this).css('min-height', Math.round(imgh * 1.4) );
+    }
+  });
+
 
   // Use smooth scrolling when clicking on navigation
   $('.nav-link').on('click', function() {
