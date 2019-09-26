@@ -408,23 +408,16 @@ footer {
   font-size: .875rem;
 }
 #emlform a {
-  color: #fff;
   font-size: 1.125rem;
   margin-left: 1.125rem;
+}
+#eml a, #emlform a {
+  color: #fff;
   text-decoration: none;
 }
-#emlform a:hover i {
+#eml a:hover i, #emlform a:hover i {
   color: #b10106;
 }
-/*
-#emlform span {
-  font-size: .875rem;
-  margin-right: .75rem;
-}
-#emlform a:hover span {
-  text-decoration: underline;
-}
-*/
 #arrowup {
   position: fixed;
   display: none;

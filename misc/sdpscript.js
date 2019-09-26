@@ -61,9 +61,16 @@ $(function() {
     $('html, body').animate({scrollTop: 0}, 500);
   });
 
+  /*
   $('#emlform').on('submit', function(e) {
     e.preventDefault();
     console.log('form submitted');
+  });
+  */
+
+  $('#eml a').on('click', function(e) {
+    e.preventDefault();
+    console.log('send email');
   });
 
   function toggleNavbar() {
