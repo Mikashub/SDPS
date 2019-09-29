@@ -411,11 +411,11 @@ footer {
   font-size: 1.125rem;
   margin-left: 1.125rem;
 }
-#eml a, #emlform a {
+#emla, #emlform a {
   color: #fff;
   text-decoration: none;
 }
-#eml a:hover i, #emlform a:hover i {
+#emla:hover i, #emlform a:hover i {
   color: #b10106;
 }
 #arrowup {
@@ -653,6 +653,9 @@ footer {
   #mapa a {
     margin-top: 1.275rem;
   }
+  #mapa .img-fluid {
+    max-width: 89%;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -687,6 +690,9 @@ footer {
   article img {
     max-width: 35%;
     margin-left: 1rem;
+  }
+  #mapa .img-fluid {
+    max-width: 83%;
   }
   /* podešavanja menija sa 5 stavki u odeljku "istaknuto"
   .secselect a.col-md-5:last-child {
@@ -737,5 +743,8 @@ footer {
   }
   article img {
     max-width: 25%;
+  }
+  #mapa .img-fluid {
+    max-width: 94%;
   }
 }

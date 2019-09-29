@@ -68,7 +68,7 @@ $(function() {
   });
   */
 
-  $('#eml a').on('click', function(e) {
+  $('#emla').on('click', function(e) {
     e.preventDefault();
     console.log('send email');
   });
