@@ -70,8 +70,36 @@ $(function() {
 
   $('#emla').on('click', function(e) {
     e.preventDefault();
-    console.log('send email');
+    // console.log(this);
+    // encoded & reversed strings
+    var mta = '==gOvRHbpFWb'; // mailto:
+    var atadr = '==AQlNWamZ2b'; // office@
+    var ctm = eml(this, atadr);
+    var mtl = mtla(mta, ctm);
+    console.log(mtl);
   });
+
+  function rvr(enca) { // reverse encoded string function
+    for (var b = "", c = enca.length - 1; c >= 0; c--) 
+    b += enca[c];
+    return atob(b);
+  }
+  
+  function eml(a, atadr) {
+    var cdn = a.getAttribute("data-cnm") + '.rs'; // company domain name + top level domain
+    return rvr(atadr) + cdn;
+  }
+
+  function mtla(mta, ctm) {
+    return rvr(mta) + ctm;
+  }
+  
+  /*
+  document.addEventListener("DOMContentLoaded", function () {
+    var a = document.getElementById("emla"); // html anchor element
+    a.textContent = rvr("=A0bm5Wa") + a.textContent;
+  }, !1);
+  */
 
   function toggleNavbar() {
     var hash = $('#sitenav').find('li a.active').attr('href');
