@@ -75,11 +75,10 @@ $(function() {
     var mta = '==gOvRHbpFWb'; // mailto:
     var atadr = '==AQlNWamZ2b'; // office@
     var ctm = eml(this, atadr);
-    var mtl = mtla(mta, ctm);
-    console.log(mtl);
+    console.log(mtla(mta, ctm));
   });
 
-  function rvr(enca) { // reverse encoded string function
+  function rvr(enca) { // reverse (encoded) string function
     for (var b = "", c = enca.length - 1; c >= 0; c--) 
     b += enca[c];
     return atob(b);
