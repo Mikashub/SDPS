@@ -61,21 +61,40 @@ $(function() {
     $('html, body').animate({scrollTop: 0}, 500);
   });
 
-  /*
-  $('#emlform').on('submit', function(e) {
-    e.preventDefault();
-    console.log('form submitted');
-  });
-  */
+  // encoded & reversed strings
+  const mta = '==gOvRHbpFWb'; // mailto:
+  const atadr = '==AQlNWamZ2b'; // office@
 
   $('#emla').on('click', function(e) {
     e.preventDefault();
     // console.log(this);
-    // encoded & reversed strings
-    var mta = '==gOvRHbpFWb'; // mailto:
-    var atadr = '==AQlNWamZ2b'; // office@
     var ctm = eml(this, atadr);
-    console.log(mtla(mta, ctm));
+    // append text with links to the send-email pop-out window
+    $( $.parseHTML('<a href="' + mtla(mta, ctm) 
+    +'" class="d-block"><i class="fa fa-envelope-o" aria-hidden="true"></i>'
+    +'Kontaktirajte nas</a>koristeći vašu omiljenu<br>email aplikaciju<br>ili<br>'
+    +'<a href="#"><i class="fa fa-copy" aria-hidden="true">&nbsp;</i>prekopirajte</a> '
+    +'našu kontakt adresu<br><input id="ctcb" type="text" value="'+ ctm 
+    +'" size="10"/> u webmail') ).appendTo('#sempow p');
+    $('.notices').fadeIn();
+  });
+
+  $('#sempow p').on('click', 'a', function(e) {
+  // static parent 'p' ---> dynamic 'a' element 
+    if( $(this).attr('href') == '#' ) {
+      e.preventDefault();
+      // copy email address to clipboard
+      var ctcb = document.querySelector('#ctcb');
+      ctcb.select();
+      document.execCommand('copy');
+    }
+    $('.notices').fadeOut();
+    $('#sempow p').empty();
+  });
+
+  $('#sempow .close').on('click', function() {
+    $('.notices').fadeOut();
+    $('#sempow p').empty();
   });
 
   function rvr(enca) { // reverse (encoded) string function

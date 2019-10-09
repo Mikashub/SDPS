@@ -85,6 +85,14 @@ make the flex item that comes after it break to a new row */
 .minnav .kontakti[href="#kontakt"] {
   margin-left: .75rem;
 }
+.background-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .75);
+}
 #mission {
   color: rgba(33, 12, 112, 0.75);
   display: none;
@@ -96,14 +104,6 @@ make the flex item that comes after it break to a new row */
 #naslovna {
   position: relative;
   min-height: 50vh;
-}
-#naslovna .background-overlay {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, .75);
 }
 #naslovna section {
   position: relative;
@@ -435,6 +435,47 @@ footer {
 #arrowup:hover {
   background-color: rgba(255, 255, 255, .9);
 }
+.notices {
+  display: none;
+}
+#sempow {
+  /* send email pop-out window */
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 280px;
+  height: 180px;
+  padding: 10px;
+  margin: -100px 0 0 -150px;
+  background-color: #eee;
+  border-radius: .25rem;
+}
+#sempow p {
+  text-align: center;
+}
+#sempow p a {
+  color: #210c70;
+  font-style: italic;
+  font-weight: 500;
+  margin: 4px 0;
+}
+#sempow .fa {
+  position: relative;
+  top: 2px;
+  left: -4px;
+}
+#sempow input {
+  font-weight: 500;
+  background-color: initial;
+  border: none;
+  outline: none;
+}
+#sempow button {
+  position: absolute;
+  top: -4px;
+  right: 0;
+}
+
 /* Extra small devices (portrait phones, less than 576px or 480px in this case) */
 /* No media query for `xs` since this is the default in Bootstrap */
 
