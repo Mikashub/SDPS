@@ -228,7 +228,26 @@ article img {
   line-height: 0.8;
   vertical-align: sub;
 }
-.secselect h2 {
+.docop::before {
+  content: '';
+  background-color: #178581;
+  display: block;
+  width: 2.5em;
+  height: 2.5em;
+  margin: 2em 0 0;
+}
+.docselect a:hover {
+  color: #fff
+}
+.docselect a h3 {
+  color: #fff;
+  font-style: normal;
+  font-size: 1.25rem;
+  text-align: left;
+  line-height: 2;
+}
+.secselect h2,
+.docselect h2 {
   font-size: 1.5rem;
 }
 .secselect a {
@@ -576,7 +595,8 @@ footer {
   .psv::first-letter {
     font-size: 1.5rem;
   }
-  .secselect h2 {
+  .secselect h2,
+  .docselect h2 {
     font-size: 1.75rem;
   }
   .sectable ul:nth-child(even)>li,
@@ -629,7 +649,15 @@ footer {
   #naslovna h4 {
     width: 75vw;
   }
-  .secselect h2 {
+  .docop::before {
+    margin: 2.5em auto 0;
+  }
+  .docselect a h3 {
+    text-align: center;
+    line-height: initial;
+  }
+  .secselect h2,
+  .docselect h2 {
     font-size: 2rem;
   }
   .secselect a:nth-child(odd) {
@@ -717,7 +745,8 @@ footer {
   #naslovna section:nth-of-type(1) {
     padding-top: 8rem;
   }
-  #naslovna section.secselect {
+  #naslovna section.secselect,
+  #naslovna section.docselect {
     padding-top: 6rem;
   }
   #naslovna h4 {
