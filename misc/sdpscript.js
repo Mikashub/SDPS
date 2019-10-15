@@ -87,9 +87,17 @@ $(function() {
       var ctcb = document.querySelector('#ctcb');
       ctcb.select();
       document.execCommand('copy');
+      // alert('email kopiran');
+      $.when(
+        $('#sempow p').empty().html('Email kopiran!').delay(2000)
+      ).then(function() {
+        $('.notices').fadeOut();
+        $('#sempow p').empty();        
+      });
+    } else {
+      $('.notices').fadeOut();
+      $('#sempow p').empty();
     }
-    $('.notices').fadeOut();
-    $('#sempow p').empty();
   });
 
   $('#sempow .close').on('click', function() {
