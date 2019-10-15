@@ -357,6 +357,12 @@ article img {
 .sectable ul:nth-child(even)>li:nth-child(even) {
   background-color: #eee;
 }
+#sertifikati a {
+  display: inline-block;
+  background-color: #ccc;
+  padding: 15px;
+  margin: 2px 0;
+}
 /* styles for displaying header minimized on top */
 .minnav.navbar {
   background-color: #fff;
@@ -686,6 +692,11 @@ footer {
   }
   #proizvodi h4 {
     font-size: 1.25rem;
+  }
+  #sertifikati .col-md-6 {
+    -ms-flex: 0 0 49.715;
+    flex: 0 0 49.715;
+    max-width: 49.715%;
   }
   article {
     margin-bottom: 2.5rem;
