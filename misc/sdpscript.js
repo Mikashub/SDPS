@@ -89,7 +89,7 @@ $(function() {
       document.execCommand('copy');
       // alert('email kopiran');
       $.when(
-        $('#sempow p').empty().html('Email kopiran!').delay(2000)
+        $('#sempow p').empty().html('E-mail adresa iskopirana!').delay(2000)
       ).then(function() {
         $('.notices').fadeOut();
         $('#sempow p').empty();        
