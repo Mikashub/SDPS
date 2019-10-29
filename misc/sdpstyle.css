@@ -176,7 +176,7 @@ section h2 {
 }
 section h3 {
   font-size: 1.5rem;
-  margin-top: 1.25rem;
+  margin-top: 2.5rem;
   margin-bottom: 1.25rem;
 }
 section .subh3,
@@ -218,7 +218,14 @@ section p {
 }
 article {
   position: relative;
+}
+article::before {
+  position: absolute;
   border-top: 1px solid #b10106;
+  content: '';
+  display: block;
+  width: 100%;
+  top: -.875rem;
 }
 article img {
   max-width: 100%;
@@ -235,7 +242,7 @@ article img {
   display: inline-block;
   background: url(../pics/blurrydoc.jpg) center no-repeat rgba(255, 255, 255, 0.95);
   background-size: 88%;
-  border: .5rem solid rgba(10, 5, 35, 0.85);
+  border: .5rem solid rgba(46, 38, 89, 0.85);
   border-top-left-radius: .5rem;
   border-bottom-right-radius: .5rem;
   margin: .5rem 0;
@@ -247,7 +254,7 @@ article img {
   max-width: 100%;
 }
 .docop:hover {
-  border-color: rgba(34, 12, 112, 0.9);
+  border-color: rgba(58, 36, 146, 0.9);
   text-decoration: none;
 }
 .docop:hover h3 {
@@ -499,9 +506,9 @@ footer {
   left: 50%;
   width: 300px;
   height: 200px;
-  padding: 20px;
+  padding: 20px 25px;
   margin: -120px 0 0 -170px;
-  background: center no-repeat url(../pics/okvir-popup.png);
+  background: center no-repeat url(../pics/infokvir.png);
   background-size: contain;
   /* border-radius: .25rem; */
 }
@@ -518,17 +525,21 @@ footer {
   position: relative;
   top: 2px;
   left: -4px;
+  margin-left: 8px;
 }
 #sempow input {
+  position: relative;
+  left: .25rem;
   font-weight: 500;
   background-color: initial;
   border: none;
   outline: none;
+  padding: 0;
 }
 #sempow button {
   position: absolute;
-  top: 9px;
-  right: 12px;
+  top: 8px;
+  right: 20px;
 }
 
 /* Extra small devices (portrait phones, less than 576px or 480px in this case) */
@@ -608,16 +619,16 @@ footer {
     text-indent: 2rem;
   }
   article {
-    border-top-width: 2px;
     margin-bottom: 1.5rem;
   }
   article::after {
     content: '';
+    display: block;
     background: left / contain no-repeat url('../pics/h4curve.png');
     position: absolute;
-    top: -2px;
     width: 24px;
     height: 8px;
+    top: -.875rem;
   }
   article img {
     max-width: 49%;
@@ -733,6 +744,9 @@ footer {
   }
   article {
     margin-bottom: 2.5rem;
+  }
+  article::before {
+    border-top-width: 2px;
   }
   article::after {
     width: 36px;

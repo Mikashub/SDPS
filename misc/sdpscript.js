@@ -72,8 +72,8 @@ $(function() {
     // append text with links to the send-email pop-out window
     $( $.parseHTML('<a href="' + mtla(mta, ctm) 
     +'" class="d-block"><i class="fa fa-envelope-o" aria-hidden="true"></i>'
-    +'Kontaktirajte nas</a>koristeći vašu omiljenu<br>email aplikaciju<br>ili<br>'
-    +'<a href="#"><i class="fa fa-copy" aria-hidden="true">&nbsp;</i>prekopirajte</a> '
+    +'Kontaktirajte nas</a>koristeći vašu omiljenu<br>email aplikaciju<br>ili&nbsp;'
+    +'<a href="#"><i class="fa fa-copy" aria-hidden="true">&nbsp;</i>prekopirajte</a><br>'
     +'našu kontakt adresu<br><input id="ctcb" type="text" value="'+ ctm 
     +'" size="10"/> u webmail') ).appendTo('#sempow p');
     $('.notices').fadeIn();
