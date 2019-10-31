@@ -61,6 +61,12 @@ $(function() {
     $('html, body').animate({scrollTop: 0}, 500);
   });
 
+  // Language switching
+  $('.lang-menu a').on('click', function(e) {
+    e.preventDefault();
+    console.log('Srpski / English');
+  });
+
   // encoded & reversed strings
   const mta = '==gOvRHbpFWb'; // mailto:
   const atadr = '==AQlNWamZ2b'; // office@
@@ -89,7 +95,7 @@ $(function() {
       document.execCommand('copy');
       // alert('email kopiran');
       $.when(
-        $('#sempow p').empty().html('E-mail adresa iskopirana!').delay(2000)
+        $('#sempow p').empty().html('<br>E-mail adresa<br>je prekopirana!').delay(2000)
       ).then(function() {
         $('.notices').fadeOut();
         $('#sempow p').empty();        

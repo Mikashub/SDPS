@@ -78,14 +78,14 @@ make the flex item that comes after it break to a new row */
   padding-bottom: .5rem;
   font-size: .9375rem;
 }
-.navbar-expand-md .plsfe-menu,
+.navbar-expand-md .lang-menu,
 .kontakti[href="#kontakt"] {
   margin-left: 1rem;
 }
 .minnav .kontakti[href="#kontakt"] {
   margin-left: .75rem;
 }
-main p, section h3 {
+main p, main li, section h3 {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 .background-overlay {
@@ -207,6 +207,7 @@ section ul, section ol {
   padding-inline-start: 3.125rem;
 } 
 section ul li, section ol li {
+  font-size: .9rem;
   padding-bottom: .25rem;
   padding-left: .5rem;
 }
@@ -221,7 +222,7 @@ article {
 }
 article::before {
   position: absolute;
-  border-top: 1px solid #b10106;
+  border-top: 1.5px solid #b10106;
   content: '';
   display: block;
   width: 100%;
@@ -345,7 +346,7 @@ article img {
   margin: 1rem 0 .8rem;
 }
 #proizvodi section h3 {
-  margin: 1rem 0;
+  margin: 1.25rem 0 2rem;
 }
 .smallist {
   padding-inline-start: 0;
@@ -421,7 +422,7 @@ article img {
 .minnav.navbar-expand-md .navbar-nav .nav-link.pr0 {
   padding-right: .5rem;
 }
-.minnav.navbar-expand-md .navbar-nav .plsfe-item.nav-link.pr0 {
+.minnav.navbar-expand-md .navbar-nav .lang-item.nav-link.pr0 {
   width: 4rem;
 }
 .minnav .navbar-nav .nav-link {
@@ -626,8 +627,8 @@ footer {
     display: block;
     background: left / contain no-repeat url('../pics/h4curve.png');
     position: absolute;
-    width: 24px;
-    height: 8px;
+    width: 18px;
+    height: 6px;
     top: -.875rem;
   }
   article img {
@@ -746,11 +747,11 @@ footer {
     margin-bottom: 2.5rem;
   }
   article::before {
-    border-top-width: 2px;
+    border-top-width: 2.5px;
   }
   article::after {
-    width: 36px;
-    height: 12px;
+    width: 30px;
+    height: 10px;
   }
   article img {
     margin-left: .75rem;
@@ -860,7 +861,7 @@ footer {
   .navbar-expand-md .navbar-nav .nav-link.pr0 {
     padding-right: .5rem;
   }
-  .navbar-expand-md .navbar-nav .plsfe-item.nav-link.pr0 {
+  .navbar-expand-md .navbar-nav .lang-item.nav-link.pr0 {
     width: 4rem;
   }
   .navbar-nav .nav-item.main-menu {
@@ -875,7 +876,7 @@ footer {
   .flex-row-break {
     display: none;
   }
-  .plsfe-menu {
+  .lang-menu {
     margin-left: .5rem;
   }
   #naslovna h4 {
