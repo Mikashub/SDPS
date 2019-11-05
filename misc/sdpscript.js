@@ -64,7 +64,14 @@ $(function() {
   // Language switching
   $('.lang-menu a').on('click', function(e) {
     e.preventDefault();
-    console.log('Srpski / English');
+    // console.log('Srpski / English');
+    $('.notices').fadeIn();
+    $.when(
+      $('#sempow p').empty().html('<br>English version will<br>be available soon...').delay(5000)
+    ).then(function() {
+      $('.notices').fadeOut();
+      $('#sempow p').empty();        
+    });
   });
 
   // encoded & reversed strings

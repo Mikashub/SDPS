@@ -85,7 +85,7 @@ make the flex item that comes after it break to a new row */
 .minnav .kontakti[href="#kontakt"] {
   margin-left: .75rem;
 }
-main p, main li, section h3 {
+main p, main li, section h3, #istaknuto table {
   font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 }
 .background-overlay {
@@ -125,7 +125,54 @@ main p, main li, section h3 {
 }
 #istaknuto h4 {
   font-size: 1.2rem;
+  text-align: justify;
   margin: 2rem 0 1rem;
+}
+table {
+  margin-bottom: 2rem;
+  border: 2px solid #111;
+}
+thead td, tfoot td {
+  font-size: 93.75%;
+  font-style: italic;
+  font-weight: 500;
+  text-align: justify;
+  padding: .5rem;
+}
+thead tr {
+  background-color: #e0e9ff;
+  border-bottom: 2px solid #111;
+}
+tfoot tr {
+  background-color: #e0e9ff;
+  border-top: 2px solid #111;
+}
+.trc1 {
+  background-color: #cee5f2;  
+}
+.trc2 {
+  background-color: #add0e1;  
+}
+.trc3 {
+  background-color: #8fbbc6;
+}
+tbody td, tbody th {
+  border-right: 1px solid #111;
+  border-bottom: 1px solid #111;
+}
+tbody th {
+  text-align: center;
+  font-weight: 500;
+}
+tbody td {
+  text-align: center;
+}
+tbody .tdpl {
+  text-align: left;
+  padding-left: .5rem;
+}
+tbody .tdfw {
+  font-weight: 500;
 }
 a[href="#istaknuto"] {
   margin-top: .5rem;
@@ -691,6 +738,9 @@ footer {
   .sub-menu {
     margin-left: 2.5rem;
   }
+  #mission>br {
+    display: none;
+  }
   .minnav #mission {
     display: block;
   }
@@ -812,6 +862,13 @@ footer {
     line-height: 1.8;
     width: 45%;
   }
+  #mission>br {
+    display: inline;
+  }
+  .minnav #mission {
+    line-height: 1.5;
+    transform: translateY(-5%);
+  }
   #naslovna {
     min-height: 100vh;
   }
@@ -860,7 +917,7 @@ footer {
     width: 25%;
   }
   .minnav .navbar-brand {
-    width: 20%;
+    width: 17.5%;
   }
   .navbar-expand-md .navbar-nav .nav-link.pr0 {
     padding-right: .5rem;
@@ -870,12 +927,6 @@ footer {
   }
   .navbar-nav .nav-item.main-menu {
     margin-bottom: 0;
-  }
-  .minnav #mission {
-    transform: translateY(-9%);
-  }
-  .minnav #mission>br {
-    display: none;
   }
   .flex-row-break {
     display: none;
@@ -902,5 +953,11 @@ footer {
   }
   #mapa .img-fluid {
     max-width: 94%;
+  }
+}
+/* Extra large devices /w mini navbar (1200px and up) */
+@media (min-width: 1280px) {
+  .minnav #mission>br {
+    display: none;
   }
 }
