@@ -140,21 +140,21 @@ thead td, tfoot td {
   padding: .5rem;
 }
 thead tr {
-  background-color: #e0e9ff;
+  background-color: #e6efff;
   border-bottom: 2px solid #111;
 }
 tfoot tr {
-  background-color: #e0e9ff;
+  background-color: #e6efff;
   border-top: 2px solid #111;
 }
 .trc1 {
-  background-color: #cee5f2;  
+  background-color: #bfdaf5;  
 }
 .trc2 {
-  background-color: #add0e1;  
+  background-color: #a7c8ef;  
 }
 .trc3 {
-  background-color: #8fbbc6;
+  background-color: #8db8e2;
 }
 tbody td, tbody th {
   border-right: 1px solid #111;
@@ -258,7 +258,7 @@ section ul, section ol {
   padding-inline-start: 3.125rem;
 } 
 section ul li, section ol li {
-  font-size: .9rem;
+  /* font-size: .9rem; */
   padding-bottom: .25rem;
   padding-left: .5rem;
 }
