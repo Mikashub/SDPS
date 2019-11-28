@@ -129,6 +129,8 @@ main p, main li, section h3, #istaknuto table {
   margin: 2rem 0 1rem;
 }
 table {
+  table-layout: fixed;
+  word-break: break-word;
   margin-bottom: 2rem;
   border: 2px solid #111;
 }
@@ -173,6 +175,9 @@ tbody .tdpl {
 }
 tbody .tdfw {
   font-weight: 500;
+}
+.tcrem {
+  display: none;
 }
 a[href="#istaknuto"] {
   margin-top: .5rem;
@@ -610,6 +615,13 @@ footer {
   }
   .btn-links-wrap .btn {
     margin: 1.5rem 2rem;
+  }
+  table {
+    table-layout: initial;
+    word-break: initial;
+  }
+  .tcrem {
+    display: table-cell;
   }
 }
 

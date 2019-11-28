@@ -19,6 +19,16 @@ $(function() {
     toggleNavbar();
   });
 
+  $(window).on('resize', function() {
+    // var csval = $('#trwfx').attr('colspan');
+    if(this.innerWidth < 480) {
+      // console.log(csval);
+      $('#trwfx').attr('colspan', '4');
+    } else {
+      $('#trwfx').attr('colspan', '6');
+    }
+  }).resize(); // fires on load as well
+
   // Set article min-height if it contains an image
   $('#proizvodi article').each(function(){
     if ( $(this).has('img') ) {
